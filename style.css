@@ -1,0 +1,144 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url('./IMG/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 90% 80px;
+}
+
+div#photoDiv{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('./IMG/pattern-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 90% 305px;
+    background-position: center;
+}
+
+div#selector{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 40px;
+    margin-top: -20px;
+    width: 80px;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 20px 0px rgb(0,0,0,0.3);
+}
+
+button#btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+button#btn img{
+    height: 15px;
+    width: 10px;
+    margin-top: 0px;
+}
+
+img{
+    width: 250px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+div#quote{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('./IMG/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 60px auto;
+}
+
+div#quote h1{
+    width: 85%;
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-size: 19px;
+    font-weight: 300;
+    text-align: center; 
+    color: hsl(240, 38%, 20%);
+}
+
+div#quote h2{
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center; 
+    color: hsl(240, 38%, 20%);
+    margin: 8px 0px 0px;
+}
+
+div#quote h3{
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center; 
+    color: hsl(240, 18%, 77%);
+    margin: 0px 0px 0px;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-position: bottom left;
+        background-size: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    section{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 50vh;
+        width: 80vw;
+    }
+    div#photoDiv{
+        height: 100vh;
+        width: 50vw;
+        background-size: 100% auto;
+    }
+    div#selector{
+        margin-right: 40%;
+    }
+    div#quote{
+        background-size: auto 8vh ;
+        background-position: left 65px top -8px;
+        width: 50vw;
+        align-items: flex-start;
+        justify-content: left;
+    }
+    div#quote h1{
+        width: 123%;
+        font-size: 2.48vw;
+        text-align: left;
+    }
+    div#photoDiv img{
+        width: 80%;
+    }
+}
